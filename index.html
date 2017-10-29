@@ -3,20 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title> Home Design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Schoolbell&v1' rel='stylesheet' type='text/css'>
+   
+        
         <link rel="stylesheet" type="text/css" href="css/styles.css">        
+        <script src="js/script.js"></script>
     </head>
     <body>
+
         <header>
             <a class = "logo" href="index.html"><img alt="" src="images/logo.png"></a>
-            <nav class="topnav">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Services</a>
-                    <a href="">Blog</a>
-                    <a href="">Portofolio </a>
-                    <a href="">Contact </a>
-                    <a href="" style="font-size:15px;" class="icon" onclick="">&#9776;</a>
+            <nav class="topnav" id="myTopnav">
+                <a href="#subheader">Home</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="Mfunction()">Portofolio
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="">Portofolio </a>
+                        <a href="">Portofolio </a>
+                        <a href="">Portofolio </a>
+                    </div>
+                </div>
+                <a href="">Contact </a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </nav>
         </header>
+
+        <section id="subheader">
+            <div class = "center">
+                    <h2>Hi. This is Meraki .</h2>
+                    <p> Professional Home Design Services for your home </p>
+            </div>
+        </section>
+
     </body>
 </html>
