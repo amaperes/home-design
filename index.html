@@ -2,42 +2,69 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Home Design Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title> Home Design</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Schoolbell&v1' rel='stylesheet' type='text/css'>
-   
-        
-        <link rel="stylesheet" type="text/css" href="css/styles.css">        
-        <script src="js/script.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300|Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
-    <body>
 
+    <body>
         <header>
-            <a class = "logo" href="index.html"><img alt="" src="images/logo.png"></a>
-            <nav class="topnav" id="myTopnav">
-                <a href="#subheader">Home</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="Mfunction()">Portofolio
-                            <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="">Portofolio </a>
-                        <a href="">Portofolio </a>
-                        <a href="">Portofolio </a>
+                <a class = "logo" href="index.html"><img alt="" src="images/logo.png"></a>
+                <nav class="topnav" id="myTopnav">
+                    <a href="#subheader">Acasa</a>
+                    <a href="#service">Servicii</a>
+                    <a href="#about.html">Despre noi</a>
+                    
+                    <a href="">Blog</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Portofoliu
+                                <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="">Bucatarie</a>
+                            <a href="">Dormitor</a>
+                            <a href="">Living</a>
+                            <a href="">Diverse</a>
+                        </div>
                     </div>
-                </div>
-                <a href="">Contact </a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </nav>
-        </header>
+                    <a href="">Contact </a>
+                    <a href="" style="font-size:15px;" class="icon">&#9776;</a>
+                </nav>
+            </header>
 
         <section id="subheader">
-            <div class = "center">
-                    <h2>Hi. This is Meraki .</h2>
-                    <p> Professional Home Design Services for your home </p>
+                <h2>Hi. This is Meraki .</h2>
+                <p> Professional Home Design Services for your home </p>
+        </section>
+
+        <section id="service">
+            <div class="container">
+                <article>
+                        <h2>Despre noi</h2>
+                </article>
+                      <ul>
+                        <li>
+                          <a class="icon1" href=""></a>
+                          <h3>Consultanta</h3>
+                          <p> Integrarea elementelor si detaliilor care vor face spatiul unic si unitar.</p>
+                        </li>
+                        <li>
+                          <a class="icon2" href=""></a>
+                          <h3>Machetare 3D</h3>
+                          <p> Realizarea machetelor pentru o mai buna vizualizare a intregului proiect</p>
+                        </li>
+                        <li>
+                          <a class="icon3" href=""></a>
+                          <h3>Concept si design</h3>
+                          <p> Unic realizat de designeri specializati </p>
+                        </li>
+                      </ul>
+
             </div>
         </section>
 
