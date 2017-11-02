@@ -1,3 +1,10 @@
+@font-face{
+  font-family: 'Indie Flower';
+    src:url('fonts/IndieFlower.ttf');
+  font-weight:normal;
+  font-style: normal;
+}
+
 html,body,section{
     margin: 0;
     padding: 0;
@@ -15,8 +22,8 @@ html,body,section{
 }
 
 h2{
-  font-size: 32px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-family: "Indie Flower", sans-serif;
   color: black;
   opacity: 0.9;
 }
@@ -144,9 +151,6 @@ header {
     display: block;
   }
 }
-
-
-
         /* Background section */
 
 #subheader{
@@ -173,8 +177,6 @@ header {
   padding: 0;
   top:250px;
   font-family:'Tangerine';
-  
-
 }
 
 #subheader p {
@@ -185,7 +187,7 @@ header {
   opacity: 0.6;
   margin-bottom: 1.65em;
   top: 230px;
-  font-family: 'Schoolbell', arial, serif; 
+  font-family: 'Indie Flower';
 }
 
 @media (max-width: 750px) {
@@ -227,6 +229,7 @@ header {
   width: 15%;
   border-bottom: 4px double #da4040;
 }
+
 #service h2:after {
   content: "";
   position: absolute;
@@ -272,4 +275,39 @@ header {
 }
 #service ul .icon3 {
   background-image: url(../images/icon3.png);
+}
+
+#service ul a:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+        /* Footer */
+
+footer {
+  background-color: #ffffff;
+  padding: 30px 0;
+  box-shadow: 0px 1px 4px #636b6e;
+  text-align: center;
+}
+
+small{
+  color: #636b6e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
 }
