@@ -1,11 +1,11 @@
 @font-face{
   font-family: 'Indie Flower';
-    src:url('fonts/IndieFlower.ttf');
+    src:url('../fonts/IndieFlower.ttf');
   font-weight:normal;
   font-style: normal;
 }
 
-html,body,section{
+html,body,section,div{
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,7 +17,7 @@ html,body,section{
 
 .container{
   width:100%;
-  min-width: 960px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -139,7 +139,7 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+    /* Responsive topnav */
 @media screen and (max-width: 750px) {
   .topnav  a {display: none;}
   .topnav .dropbtn {display: none;}
@@ -190,6 +190,7 @@ header {
   font-family: 'Indie Flower';
 }
 
+    /*Responsive subheader*/
 @media (max-width: 750px) {
   
   body {
@@ -310,4 +311,80 @@ small{
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   font-weight: 400;
+}
+
+      /* Subheader-slider */
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+  
+  #subheader-slider { overflow: hidden; }
+  #subheader-slider figure img { width: 20%; float: left; }
+  #subheader-slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size:0;
+    animation: 30s slidy infinite; 
+   
+  }
+
+
+  /* Responsive services */
+
+  @media (max-width: 925px){
+    #service{
+      padding: 0 0 380px;
+    }
+  }
+  @media (max-width: 920px) {
+    
+  #service {
+    padding:35px 0 700px;
+  }
+  #service .container h2:before {
+    left: 15%;
+    width: 18%;
+  }
+  #service .container h2:after {
+    width: 18%;
+    right: 15%;
+  }
+  #service .container h2{
+    left:0%;
+  }
+  #service .container ul li {
+    text-align: center;
+    float: none;
+    display: block;
+    width: 97%;
+  }
+}
+
+@media (max-width: 360px) {
+  #service .container h2:before {
+    left: 10%;
+    width: 15%;
+  }
+  #service .container h2:after {
+    width: 15%;
+    right: 10%;
+  }
+
+  #service .container ul li {
+    text-align: center;
+    float: none;
+    width: 94%;
+  }
 }
