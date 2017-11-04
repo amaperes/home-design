@@ -5,21 +5,16 @@
   font-style: normal;
 }
 
-html,body,section,div{
+html,body{
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     font-size: 100%;
     color: rgb(0, 0, 0);
-    height: 100%
+    height: 100%;
 }
 
-.container{
-  width:100%;
-  height: 100%;
-  margin: 0 auto;
-}
 
 h2{
   font-size: 36px;
@@ -140,7 +135,8 @@ header {
     display: block;
 }
     /* Responsive topnav */
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 768px) {
   .topnav  a {display: none;}
   .topnav .dropbtn {display: none;}
   .topnav  a.icon {
@@ -159,7 +155,7 @@ header {
   background-size: cover;
   color: #ffffff;
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
 	top: 0;
 	left: 0;
   text-align: center;
@@ -190,15 +186,21 @@ header {
   font-family: 'Indie Flower';
 }
 
-    /*Responsive subheader*/
-@media (max-width: 750px) {
+    /*Responsive subheader home */
+
+
+@media (max-width: 1280px) {
   
   body {
     width: 100%;
     min-width: 100%;
   }
-
+  #subheader h2{
+    top: 44%;
+    padding:20px;
+  }
   #subheader p{
+    top:39%;
     font-size:30px;
     text-align: center;
   }  
@@ -211,15 +213,14 @@ header {
   padding: 50px 0;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(220, 250, 211, 0.4);
-  height: 75%;
+  background-color: rgba(239, 252, 235, 0.4);
+  height: auto;
   
 }
 
 #service h2{
   margin-bottom:40px;
   position: relative;
-  display: block;
 }
 
 #service h2:before {
@@ -251,12 +252,12 @@ header {
   
 }
 #service ul li {
-  width: 31%;
   vertical-align: top;
   text-align: center;
   position: relative;
   display: inline-block;
   margin: 9px;
+  width:31%;
 }
 
 #service ul a {
@@ -313,8 +314,9 @@ small{
   font-weight: 400;
 }
 
-      /* Subheader-slider */
-
+/* About , Portofolio ,Contact ,Blog*/
+     
+   /* Subheader-slider  */
 @keyframes slidy {
   0% { left: 0%; }
   20% { left: 0%; }
@@ -328,7 +330,7 @@ small{
 }
   
   #subheader-slider { overflow: hidden; }
-  #subheader-slider figure img { width: 20%; float: left; }
+  #subheader-slider figure img { width: 20%; float: left; }  
   #subheader-slider figure { 
     position: relative;
     width: 500%;
@@ -340,51 +342,85 @@ small{
    
   }
 
+/* About Us */
+
+#about{
+  position: relative;
+  background-color: rgb(253, 251, 250);
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about h2{
+  margin-bottom:40px;
+  position: relative;
+  display: block;
+}
+
+#about h2:before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 25%;
+  width: 15%;
+  border-bottom: 4px double #da4040;
+}
+
+#about h2:after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 25%;
+  width: 15%;
+  border-bottom: 4px double #da4040;
+}
+
+
 
   /* Responsive services */
 
-  @media (max-width: 925px){
-    #service{
-      padding: 0 0 380px;
-    }
-  }
-  @media (max-width: 920px) {
+ 
+  @media (max-width: 768px) {
     
   #service {
-    padding:35px 0 700px;
+    padding:30px 0 30px;
   }
-  #service .container h2:before {
+  #service  h2:before {
     left: 15%;
     width: 18%;
   }
-  #service .container h2:after {
+  #service  h2:after {
     width: 18%;
     right: 15%;
   }
-  #service .container h2{
+  #service  h2{
     left:0%;
   }
-  #service .container ul li {
+  #service  ul li {
     text-align: center;
-    float: none;
-    display: block;
     width: 97%;
+    padding: 20px 0;
+    display:block;
   }
 }
-
 @media (max-width: 360px) {
-  #service .container h2:before {
+  #service  h2:before {
     left: 10%;
     width: 15%;
   }
-  #service .container h2:after {
+  #service  h2:after {
     width: 15%;
     right: 10%;
   }
 
-  #service .container ul li {
+  #service  ul li {
     text-align: center;
     float: none;
     width: 94%;
-  }
+    padding: 10px 0;  }
 }
+
+
+
+
+
