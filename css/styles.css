@@ -213,7 +213,7 @@ header {
   padding: 50px 0;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(239, 252, 235, 0.4);
+  background-color: rgba(251, 255, 250, 0.4);
   height: auto;
   
 }
@@ -376,23 +376,44 @@ small{
 }
 
 
+.inner-flex {
+  margin: 0 auto;
+  max-width: 70%;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.flex-center img{
+  border-radius: 30%;
+  box-shadow: 0px 1px 3px #ffbfbf;
+}
+
+.flex-left {
+  text-align: right;
+}
+
+.flex-right {
+  text-align: left;
+}
+
+.flex-left div:first-child , .flex-right div:first-child{
+  padding-top: 3em;
+  margin-bottom: 3em;
+}
+
+.flex-left p , .flex-right p{
+  margin-bottom: 3em;
+}
+
 
   /* Responsive services */
 
- 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     
   #service {
     padding:30px 0 30px;
   }
-  #service  h2:before {
-    left: 15%;
-    width: 18%;
-  }
-  #service  h2:after {
-    width: 18%;
-    right: 15%;
-  }
+  
   #service  h2{
     left:0%;
   }
@@ -402,17 +423,10 @@ small{
     padding: 20px 0;
     display:block;
   }
+  
 }
-@media (max-width: 360px) {
-  #service  h2:before {
-    left: 10%;
-    width: 15%;
-  }
-  #service  h2:after {
-    width: 15%;
-    right: 10%;
-  }
 
+@media (max-width: 360px) {
   #service  ul li {
     text-align: center;
     float: none;
@@ -420,7 +434,66 @@ small{
     padding: 10px 0;  }
 }
 
+/*Responsive about */
+
+@media ( max-width:1280px ){
+  .inner-flex {
+    flex-direction: column;
+  }
+  .flex-right,.flex-left{
+    text-align: center;
+  }
+ 
+}
+
+@media ( max-width:768px ){
+  .inner-flex {
+    flex-direction:column; 
+  }
+
+  .flex-center img{
+   width:70%;
+  }
+}
 
 
+/* Responsive title : Services , About Us , Blog , Portofolio , Contact*/
 
+@media (max-width: 768px) {
+#service  h2:before {
+  left: 15%;
+  width: 18%;
+}
 
+#service  h2:after  {
+  width: 18%;
+  right: 15%;
+}
+#about h2:before{
+  left: 15%;
+  width:18%;
+}
+#about h2:after{
+  width: 18%;
+  right: 14%;
+}
+}
+
+@media (max-width: 360px) {
+  #service  h2:before,#about h2:before {
+    left: 10%;
+    width: 15%;
+  }
+  #service  h2:after,#about h2:after {
+    width: 15%;
+    right: 10%;
+  }
+  #about h2:before{
+    left: 11%;
+    width:15%;
+  }
+  #about h2:after{
+    width: 15%;
+    right: 10%;
+  }
+}
