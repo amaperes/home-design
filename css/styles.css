@@ -15,7 +15,6 @@ html,body{
     height: 100%;
 }
 
-
 h2{
   font-size: 36px;
   font-family: "Indie Flower", sans-serif;
@@ -36,7 +35,7 @@ h3{
 
 }
 
-          /* Top Navigation */
+                             /* Top Navigation */
 header {
     background: #ffffff;
     width: 100%;
@@ -90,7 +89,7 @@ header {
 .topnav .icon {
   display: none;
 }
-      /*  Hover  - Dropdown */
+                             /*  Hover  - Dropdown */
 .dropdown{
   float: left;
   overflow: hidden; 
@@ -131,10 +130,10 @@ header {
 
 .dropdown-content a:hover {background-color: #c54d4d}
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content ,.icon {
     display: block;
 }
-    /* Responsive topnav */
+                              /* Responsive topnav */
 
 @media screen and (max-width: 768px) {
   .topnav  a {display: none;}
@@ -147,9 +146,9 @@ header {
     display: block;
   }
 }
-        /* Background section */
+                              /* Subheader Background section */
 
-#subheader{
+.subheader{
   background-image: url(../images/background.jpg);
   background-position: center center;
   background-size: cover;
@@ -162,7 +161,7 @@ header {
   
 }
 
-#subheader h2 {
+.subheader h2 {
   position : relative;
   color: #8a1f1f;
   opacity: 0.8;
@@ -175,7 +174,7 @@ header {
   font-family:'Tangerine';
 }
 
-#subheader p {
+.subheader p {
   position: relative;
   font-size: 1.5em;
   font-weight: 900;
@@ -186,7 +185,7 @@ header {
   font-family: 'Indie Flower';
 }
 
-    /*Responsive subheader home */
+                            /*Responsive subheader home */
 
 
 @media (max-width: 1280px) {
@@ -195,20 +194,72 @@ header {
     width: 100%;
     min-width: 100%;
   }
-  #subheader h2{
+  .subheader h2{
     top: 44%;
     padding:20px;
   }
-  #subheader p{
+  .subheader p{
     top:39%;
     font-size:30px;
     text-align: center;
   }  
 }
+                         /* Title section : Services , About Us , Blog , Portofolio , Contact */
 
-        /* Services*/
+.title_section h2{
+  margin-bottom:40px;
+  position: relative;
+}
+
+.title_section h2:before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 26%;
+  width: 13%;
+  border-bottom: 4px double #da4040;
+}
+
+.title_section h2:after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 26%;
+  width: 13%;
+  border-bottom: 4px double #da4040;
+}
+
+                        /* Responsive title : Services , About Us , Blog , Portofolio , Contact */
+
+@media (max-width: 768px) {
+  .title_section  h2:before {
+    left: 15%;
+    width: 18%;
+  }
   
-#service{
+  .title_section  h2:after  {
+    width: 18%;
+    right: 15%;
+  }
+  .title_section h2{
+    font-size: 6vw;
+  }
+}
+  
+@media (max-width: 360px) {
+  .title_section h2:before{
+    left: 11%;
+    width:15%;
+  }
+  .title_section h2:after{
+    width: 15%;
+    right: 10%;
+  }
+}
+
+                        /* Services*/
+  
+.service{
   width:100%;
   padding: 50px 0;
   text-align: center;
@@ -218,40 +269,17 @@ header {
   
 }
 
-#service h2{
-  margin-bottom:40px;
-  position: relative;
-}
-
-#service h2:before {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 25%;
-  width: 15%;
-  border-bottom: 4px double #da4040;
-}
-
-#service h2:after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  right: 25%;
-  width: 15%;
-  border-bottom: 4px double #da4040;
-}
-
-#service p {
+.service p {
   color: #1d282d;
   width: 100%;
   margin: 0 auto;
 }
 
-#service ul {
+.service ul {
   padding: 20px;
   
 }
-#service ul li {
+.service ul li {
   vertical-align: top;
   text-align: center;
   position: relative;
@@ -260,7 +288,7 @@ header {
   width:31%;
 }
 
-#service ul a {
+.service ul a {
   margin: 0 auto 50px;
   width: 180px;
   height: 180px;
@@ -269,17 +297,17 @@ header {
   background-repeat: no-repeat;
   position: relative;
 }
-#service ul .icon1 {
+.service ul .icon1 {
   background-image: url(../images/icon1.png);
 }
-#service ul .icon2 {
+.service ul .icon2 {
   background-image: url(../images/icon2.png);
 }
-#service ul .icon3 {
+.service ul .icon3 {
   background-image: url(../images/icon3.png);
 }
 
-#service ul a:hover {
+.service ul a:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -298,7 +326,35 @@ header {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-        /* Footer */
+                          /* Responsive services */
+
+  @media (max-width: 768px) {
+    
+  .service {
+    padding:30px 0 30px;
+  }
+  
+  .service  h2{
+    left:0%;
+  }
+  .service  ul li {
+    text-align: center;
+    width: 97%;
+    padding: 20px 0;
+    display:block;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .service  ul li {
+    text-align: center;
+    float: none;
+    width: 94%;
+    padding: 10px 0;  }
+}
+
+                          /* Footer */
 
 footer {
   background-color: #ffffff;
@@ -314,9 +370,8 @@ small{
   font-weight: 400;
 }
 
-/* About , Portofolio ,Contact ,Blog*/
+                        /* Subheader-slider  : About , Portofolio ,Contact ,Blog*/
      
-   /* Subheader-slider  */
 @keyframes slidy {
   0% { left: 0%; }
   20% { left: 0%; }
@@ -329,9 +384,9 @@ small{
   100% { left: -400%; }
 }
   
-  #subheader-slider { overflow: hidden; }
-  #subheader-slider figure img { width: 20%; float: left; }  
-  #subheader-slider figure { 
+  .subheader-slider { overflow: hidden; }
+  .subheader-slider figure img { width: 20%; float: left; }  
+  .subheader-slider figure { 
     position: relative;
     width: 500%;
     margin: 0;
@@ -342,39 +397,14 @@ small{
    
   }
 
-/* About Us */
+                          /* About Us */
 
-#about{
+.about{
   position: relative;
   background-color: rgb(253, 251, 250);
   padding: 50px 0;
   text-align: center;
 }
-
-#about h2{
-  margin-bottom:40px;
-  position: relative;
-  display: block;
-}
-
-#about h2:before {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 25%;
-  width: 15%;
-  border-bottom: 4px double #da4040;
-}
-
-#about h2:after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  right: 25%;
-  width: 15%;
-  border-bottom: 4px double #da4040;
-}
-
 
 .inner-flex {
   margin: 0 auto;
@@ -405,36 +435,7 @@ small{
   margin-bottom: 3em;
 }
 
-
-  /* Responsive services */
-
-@media (max-width: 768px) {
-    
-  #service {
-    padding:30px 0 30px;
-  }
-  
-  #service  h2{
-    left:0%;
-  }
-  #service  ul li {
-    text-align: center;
-    width: 97%;
-    padding: 20px 0;
-    display:block;
-  }
-  
-}
-
-@media (max-width: 360px) {
-  #service  ul li {
-    text-align: center;
-    float: none;
-    width: 94%;
-    padding: 10px 0;  }
-}
-
-/*Responsive about */
+                          /*Responsive about */
 
 @media ( max-width:1280px ){
   .inner-flex {
@@ -453,47 +454,5 @@ small{
 
   .flex-center img{
    width:70%;
-  }
-}
-
-
-/* Responsive title : Services , About Us , Blog , Portofolio , Contact*/
-
-@media (max-width: 768px) {
-#service  h2:before {
-  left: 15%;
-  width: 18%;
-}
-
-#service  h2:after  {
-  width: 18%;
-  right: 15%;
-}
-#about h2:before{
-  left: 15%;
-  width:18%;
-}
-#about h2:after{
-  width: 18%;
-  right: 14%;
-}
-}
-
-@media (max-width: 360px) {
-  #service  h2:before,#about h2:before {
-    left: 10%;
-    width: 15%;
-  }
-  #service  h2:after,#about h2:after {
-    width: 15%;
-    right: 10%;
-  }
-  #about h2:before{
-    left: 11%;
-    width:15%;
-  }
-  #about h2:after{
-    width: 15%;
-    right: 10%;
   }
 }
