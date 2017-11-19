@@ -456,3 +456,185 @@ small{
    width:70%;
   }
 }
+
+                            /* Portofolio */
+        /* One acticle -  Kitchen*/
+
+.wrapper {
+  max-width: 98%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.wrapper > div {
+  border: 1px solid rgb(233,171,88);
+  border-radius: 5px;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+ 
+}
+.two{
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.three{
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.four{
+  grid-row:span 4;
+  grid-column: span 1;
+}
+
+.five {
+  grid-row: span 5;
+  grid-column: span 1;
+}
+    /* Kitchen images */
+.a{
+  background-image: url(../images/kit6.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+
+.b{
+  background-image: url(../images/kit1.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.c{
+  background-image: url(../images/kit2.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.d{
+  background-image: url(../images/kit.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.e{
+  background-image: url(../images/kit3.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.f{
+  background-image: url(../images/kit4.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.g{
+  background-image: url(../images/kit5.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.h{
+  background-image: url(../images/kit8.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.i{
+  background-image: url(../images/kit7.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+
+    /* Bedroom images*/
+.aa{
+  background-image: url(../images/bed1.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+
+.bb{
+  background-image: url(../images/bed2.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.cc{
+  background-image: url(../images/bed3.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.dd{
+  background-image: url(../images/bed4.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ee{
+  background-image: url(../images/bed5.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ff{
+  background-image: url(../images/bed6.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.gg{
+  background-image: url(../images/bed8.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.hh{
+  background-image: url(../images/bed7.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ii{
+  background-image: url(../images/bed9.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+
+.aaa{
+  background-image: url(../images/liv1.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+
+.bbb{
+  background-image: url(../images/liv2.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ccc{
+  background-image: url(../images/liv3.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ddd{
+  background-image: url(../images/liv4.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.eee{
+  background-image: url(../images/liv5.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.fff{
+  background-image: url(../images/liv6.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ggg{
+  background-image: url(../images/liv7.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.hhh{
+  background-image: url(../images/liv8.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.iii{
+  background-image: url(../images/liv9.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
