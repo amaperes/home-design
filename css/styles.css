@@ -638,3 +638,35 @@ small{
   background-position: center center;
   background-size: cover; 
 }
+
+                          /* Responsive portofolio */
+
+@media ( max-width:360px ){
+  .wrapper {
+    display: grid;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+   
+  }
+
+  .two{
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  
+  .three{
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  
+  .four{
+    grid-row:span 3;
+    grid-column: span 1;
+  }
+  
+  .five {
+    grid-row: span 4;
+    grid-column: span 1;
+  }
+}
