@@ -242,7 +242,7 @@ header {
     right: 15%;
   }
   .title_section h2{
-    font-size: 6vw;
+    font-size: 7vw;
   }
 }
   
@@ -458,7 +458,6 @@ small{
 }
 
                             /* Portofolio */
-        /* One acticle -  Kitchen*/
 
 .wrapper {
   max-width: 98%;
@@ -467,7 +466,7 @@ small{
 }
 
 .wrapper > div {
-  border: 1px solid rgb(233,171,88);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
 }
 .wrapper {
@@ -592,6 +591,7 @@ small{
   background-size: cover; 
 }
 
+      /* Living room images */
 .aaa{
   background-image: url(../images/liv1.jpg);
   background-position: center center;
@@ -638,16 +638,66 @@ small{
   background-position: center center;
   background-size: cover; 
 }
+      /* Random images */
+.aaaa{
+  background-image: url(../images/ran1.jpg);
+  background-position: bottom center;
+  background-size: cover; 
+}
+
+.bbbb{
+  background-image: url(../images/ran2.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.cccc{
+  background-image: url(../images/ran3.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.dddd{
+  background-image: url(../images/ran4.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.eeee{
+  background-image: url(../images/ran5.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.ffff{
+  background-image: url(../images/ran6.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.gggg{
+  background-image: url(../images/ran7.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.hhhh{
+  background-image: url(../images/ran8.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
+.iiii{
+  background-image: url(../images/ran9.jpg);
+  background-position: center center;
+  background-size: cover; 
+}
 
                           /* Responsive portofolio */
 
-@media ( max-width:360px ){
+@media screen and ( max-width:768px ){
   .wrapper {
     display: grid;
     grid-template-rows: repeat(13, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
    
+  }
+  .wrapper div h2{
+    font-size:6vw;
   }
 
   .two{
